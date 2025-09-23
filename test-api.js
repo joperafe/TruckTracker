@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // Simple test script to verify API functionality
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
