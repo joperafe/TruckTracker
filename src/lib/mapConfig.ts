@@ -2,8 +2,8 @@ import { MapConfig } from '@/types';
 import { useMemo } from 'react';
 
 export const adaptMapConfig = (config: Partial<MapConfig>): MapConfig => {
-  const defaultLat = parseFloat(process.env.NEXT_PUBLIC_DEFAULT_LAT || '40.7128');
-  const defaultLng = parseFloat(process.env.NEXT_PUBLIC_DEFAULT_LNG || '-74.0060');
+  const defaultLat = parseFloat(process.env.PUBLIC_DEFAULT_LAT || '40.7128');
+  const defaultLng = parseFloat(process.env.PUBLIC_DEFAULT_LNG || '-74.0060');
 
   return {
     map_settings: {
@@ -31,8 +31,8 @@ export const useTruckMapConfig = (userLocation?: [number, number] | null) => {
     return adaptMapConfig({
       map_settings: {
         center: userLocation || [
-          parseFloat(process.env.NEXT_PUBLIC_DEFAULT_LAT || '40.7128'),
-          parseFloat(process.env.NEXT_PUBLIC_DEFAULT_LNG || '-74.0060')
+          parseFloat(process.env.PUBLIC_DEFAULT_LAT || '40.7128'),
+          parseFloat(process.env.PUBLIC_DEFAULT_LNG || '-74.0060')
         ],
         zoom: 13,
         maxZoom: 18,

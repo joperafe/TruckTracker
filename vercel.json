@@ -9,10 +9,10 @@
     }
   },
   "env": {
-    "MONGODB_URI": "@mongodb_uri",
-    "NEXTAUTH_SECRET": "@nextauth_secret",
-    "NEXTAUTH_URL": "@nextauth_url",
-    "NEXT_PUBLIC_DEFAULT_LAT": "40.7128",
-    "NEXT_PUBLIC_DEFAULT_LNG": "-74.0060"
+    "DATABASE_URI": "@database_uri",
+    "AUTH_SECRET": "@auth_secret",
+    "AUTH_URL": "@auth_url",
+    "PUBLIC_DEFAULT_LAT": "40.7128",
+    "PUBLIC_DEFAULT_LNG": "-74.0060"
   }
 }
